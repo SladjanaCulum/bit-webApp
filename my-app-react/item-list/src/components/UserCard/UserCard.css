@@ -1,0 +1,26 @@
+.blogCard {
+    color: white;
+    padding: 2px;
+    margin: 6px 0;
+    border: 5px;
+    background-color: violet;
+    box-sizing: border-box;
+    display: table;
+    width: 20%;
+    padding-left: 30px;
+    
+}
+
+.blogCard img {
+    height: 200px;
+    width: 200px;
+}
+
+.blogCard h3 {
+    position: absolute;
+    margin: -40px 10px;
+   
+}
+
+
+
