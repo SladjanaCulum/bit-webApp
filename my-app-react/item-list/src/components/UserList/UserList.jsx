@@ -5,11 +5,12 @@ import { dataList } from "../../../src/data/data";
 import { UserCard } from "../UserCard/UserCard";
 import { User } from "../User/User";
 
-export const UserList = ({ useMode }) => (
-  <div className="blogList">
+export const UserList = ({ useMode }) => {
+  return (
+  <div className="blogList container row">
     {dataList.map((user, index) =>
       useMode ? (
-        <UserCard
+        <UserCard 
           name={`${user.name.first}`}
           email={`${user.email}`}
           date={`${new Date(user.dob.date).getDate()}-${
@@ -31,4 +32,5 @@ export const UserList = ({ useMode }) => (
       )
     )}
   </div>
-);
+  )
+        };
